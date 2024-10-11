@@ -2478,11 +2478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MeUSolution\\TrangSanPham\\TrangSanPham\\TrangSanPham.csproj",
-      "projectName": "TrangSanPham",
-      "projectPath": "D:\\MeUSolution\\TrangSanPham\\TrangSanPham\\TrangSanPham.csproj",
+      "projectUniqueName": "D:\\Meu Solutions\\Meu Solutions Intern Project01\\src\\Web.Products\\Web.Products.csproj",
+      "projectName": "Web.Products",
+      "projectPath": "D:\\Meu Solutions\\Meu Solutions Intern Project01\\src\\Web.Products\\Web.Products.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\MeUSolution\\TrangSanPham\\TrangSanPham\\obj\\",
+      "outputPath": "D:\\Meu Solutions\\Meu Solutions Intern Project01\\src\\Web.Products\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",

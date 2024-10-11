@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/ufELhL2VHrbB4fESteVkafnXG92Nh5hTKGX/syaa21Miyh+cJszoGtiPfvaxMbzrwTvDEOR+GBOlP580n2A2w==",
+  "dgSpecHash": "zATAJdZCiTb/uySDozeogPmdgGnqfBkRgu7SV9BKcyMw3Yv2Zv6u0l2eiRFdMP8cC3fpdpOHrGOLr3sXbprTQw==",
   "success": true,
-  "projectFilePath": "D:\\MeUSolution\\TrangSanPham\\TrangSanPham\\TrangSanPham.csproj",
+  "projectFilePath": "D:\\Meu Solutions\\Meu Solutions Intern Project01\\src\\Web.Products\\Web.Products.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
