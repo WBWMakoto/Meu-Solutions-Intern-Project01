@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Thuctap\\Tuan1\\TrangSanPham\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\data\\productcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\wwwroot\\products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\wwwroot\\products.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|e:\\thuctap\\tuan1\\trangsanpham\\trangsanpham\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8DD77861-31F9-4767-965F-9A04E22C019C}|TrangSanPham\\TrangSanPham.csproj|solutionrelative:trangsanpham\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TrangSanPham\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TrangSanPham\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T06:34:54.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrangSanPham\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TrangSanPham\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T05:00:15.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "TrangSanPham\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "TrangSanPham\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T04:50:16.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Program.cs",
+              "RelativeDocumentMoniker": "TrangSanPham\\Program.cs",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Program.cs",
+              "RelativeToolTip": "TrangSanPham\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T04:19:35.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductContext.cs",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Data\\ProductContext.cs",
+              "RelativeDocumentMoniker": "TrangSanPham\\Data\\ProductContext.cs",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Data\\ProductContext.cs",
+              "RelativeToolTip": "TrangSanPham\\Data\\ProductContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T04:17:45.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "TrangSanPham\\Models\\Product.cs",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Models\\Product.cs",
+              "RelativeToolTip": "TrangSanPham\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T04:09:53.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Products.html",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\wwwroot\\Products.html",
+              "RelativeDocumentMoniker": "TrangSanPham\\wwwroot\\Products.html",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\wwwroot\\Products.html",
+              "RelativeToolTip": "TrangSanPham\\wwwroot\\Products.html",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-04T04:54:42.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\appsettings.json",
+              "RelativeDocumentMoniker": "TrangSanPham\\appsettings.json",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\appsettings.json",
+              "RelativeToolTip": "TrangSanPham\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T04:19:36.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "TrangSanPham\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\Thuctap\\Tuan1\\TrangSanPham\\TrangSanPham\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "TrangSanPham\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T06:34:49.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

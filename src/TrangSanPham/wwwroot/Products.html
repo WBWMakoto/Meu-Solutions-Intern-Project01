@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script>
+        async function fetchProducts() {
+            try {
+                const response = await fetch('/products/all');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const products = await response.json();
+                const productsContainer = document.getElementById('products-container');
+
+                products.forEach(product => {
+                    const productElement = document.createElement('div');
+                    productElement.innerHTML = `
+                            <h2>${product.name}</h2>
+                            <p>Code: ${product.code}</p>
+                            <p>Category: ${product.category}</p>
+                            <p>Brand: ${product.brand}</p>
+                            <p>Description: ${product.description}</p>
+                            <hr />
+                        `;
+                    productsContainer.appendChild(productElement);
+                });
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchProducts);
+    </script>
+</head>
+<body>
+    <h1>Product List</h1>
+    <div id="products-container"></div>
+</body>
+</html>
+
