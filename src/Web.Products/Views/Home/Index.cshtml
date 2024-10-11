@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<ProductsAPI.Models.Product>
 @using ProductsAPI.Models
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,10 +34,52 @@
                 padding: 10px 15px;
                 margin: 0 5px;
             }
+
+        .form-container {
+            margin-bottom: 20px;
+        }
+
+            .form-container input {
+                padding: 10px;
+                margin-right: 5px;
+            }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
     </style>
 </head>
 <body>
     <h1>Product List</h1>
+    <div id="alertMessage" style="display: none;" class="alert"></div>
+
+    <div class="form-container">
+        <form id="productForm" onsubmit="return createProduct(event)">
+            <input type="text" name="Code" placeholder="Code" required />
+            <input type="text" name="Name" placeholder="Name" required />
+            <input type="text" name="Category" placeholder="Category" required />
+            <input type="text" name="Brand" placeholder="Brand" required />
+            <input type="text" name="Type" placeholder="Type" required />
+            <input type="text" name="Description" placeholder="Description" required />
+            <button type="submit">Create Product</button>
+        </form>
+    </div>
+
     <table>
         <tr>
             <th>ID</th>
@@ -54,13 +95,13 @@
             foreach (var product in Model)
             {
                 <tr>
-                    <td>@Html.DisplayFor(m => product.Id)</td>
-                    <td>@Html.DisplayFor(m => product.Code)</td>
-                    <td>@Html.DisplayFor(m => product.Name)</td>
-                    <td>@Html.DisplayFor(m => product.Category)</td>
-                    <td>@Html.DisplayFor(m => product.Brand)</td>
-                    <td>@Html.DisplayFor(m => product.Type)</td>
-                    <td>@Html.DisplayFor(m => product.Description)</td>
+                    <td>@product.Id</td>
+                    <td>@product.Code</td>
+                    <td>@product.Name</td>
+                    <td>@product.Category</td>
+                    <td>@product.Brand</td>
+                    <td>@product.Type</td>
+                    <td>@product.Description</td>
                 </tr>
             }
         }
@@ -78,14 +119,63 @@
             <button onclick="location.href='?page=1'">First</button>
             <button onclick="location.href='?page=@(ViewBag.CurrentPage - 1)'">Previous</button>
         }
-
         <span>Page @ViewBag.CurrentPage of @ViewBag.TotalPages</span>
-
         @if (ViewBag.CurrentPage < ViewBag.TotalPages)
         {
             <button onclick="location.href='?page=@(ViewBag.CurrentPage + 1)'">Next</button>
             <button onclick="location.href='?page=@ViewBag.TotalPages'">Last</button>
         }
     </div>
+
+    <script>
+        function showAlert(message, isSuccess) {
+            const alertDiv = document.getElementById('alertMessage');
+            alertDiv.textContent = message;
+            alertDiv.className = `alert ${isSuccess ? 'alert-success' : 'alert-danger'}`;
+            alertDiv.style.display = 'block';
+
+            // Hide alert after 3 seconds
+            setTimeout(() => {
+                alertDiv.style.display = 'none';
+            }, 3000);
+        }
+
+        async function createProduct(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            const product = {};
+            formData.forEach((value, key) => {
+                product[key] = value;
+            });
+
+            try {
+                const response = await fetch('/products', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(product)
+                });
+
+                if (response.ok) {
+                    showAlert('Product created successfully!', true);
+                    form.reset(); // Reset form
+                    setTimeout(() => {
+                        window.location.reload(); // Reload page after 1 second
+                    }, 1000);
+                } else {
+                    const errorData = await response.json();
+                    showAlert(errorData.message || 'Error creating product', false);
+                }
+            } catch (error) {
+                showAlert('Error creating product: ' + error.message, false);
+            }
+
+            return false;
+        }
+    </script>
 </body>
 </html>

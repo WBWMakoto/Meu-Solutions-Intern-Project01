@@ -5,7 +5,7 @@ using ProductsAPI.Models; // Ensure this namespace is added
 using System.Diagnostics;
 using System.Linq;
 
-namespace TrangSanPham.Controllers
+namespace ProductsAPI.Controllers
 {
     public class HomeController : Controller
     {

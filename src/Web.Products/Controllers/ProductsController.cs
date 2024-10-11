@@ -19,7 +19,7 @@ namespace ProductsAPI.Controllers
             _logger = logger;
         }
 
-        // GET: /products/all
+        //a. GET: /products/all
         [HttpGet("all")]
         public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts()
         {
@@ -35,7 +35,7 @@ namespace ProductsAPI.Controllers
             }
         }
 
-        // GET: /products/5
+        //b. GET: /products/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
@@ -57,7 +57,7 @@ namespace ProductsAPI.Controllers
             }
         }
 
-        // POST: /products
+        //c. POST: /products
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Product product)
         {
@@ -83,7 +83,7 @@ namespace ProductsAPI.Controllers
             }
         }
 
-        // PUT: /products/5
+        //d. PUT: /products/5
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct(int id, Product product)
         {
@@ -124,7 +124,7 @@ namespace ProductsAPI.Controllers
             }
         }
 
-        // DELETE: /products/5
+        //e. DELETE: /products/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
@@ -148,92 +148,7 @@ namespace ProductsAPI.Controllers
             }
         }
 
-        // GET: /products/view
-        [HttpGet("view")]
-        public async Task<IActionResult> GetProductsView()
-        {
-            try
-            {
-                var products = await _context.Product.ToListAsync(); // Ensure it's the correct DbSet
-                var html = GenerateHtml(products);
-                return Content(html, "text/html");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error generating products view");
-                return StatusCode(500, "Internal server error");
-            }
-        }
+ 
 
-        private string GenerateHtml(List<Product> products)
-        {
-            var html = @"
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Products List</title>
-                <style>
-                    body { font-family: Arial, sans-serif; margin: 20px; }
-                    h1 { color: #333; }
-                    table { 
-                        border-collapse: collapse; 
-                        width: 100%;
-                        margin-top: 20px;
-                    }
-                    th, td { 
-                        border: 1px solid #ddd; 
-                        padding: 12px 8px; 
-                        text-align: left; 
-                    }
-                    th { 
-                        background-color: #f4f4f4; 
-                        color: #333;
-                    }
-                    tr:nth-child(even) { 
-                        background-color: #f9f9f9; 
-                    }
-                    tr:hover {
-                        background-color: #f5f5f5;
-                    }
-                </style>
-            </head>
-            <body>
-                <h1>Products List</h1>
-                <table>
-                    <tr>
-                        <th>ID</th>
-                        <th>Code</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Brand</th>
-                        <th>Type</th>
-                        <th>Description</th>
-                        <th>Created</th>
-                        <th>Updated</th>
-                    </tr>";
-
-            foreach (var product in products)
-            {
-                html += $@"
-                    <tr>
-                        <td>{product.Id}</td>
-                        <td>{product.Code}</td>
-                        <td>{product.Name}</td>
-                        <td>{product.Category}</td>
-                        <td>{product.Brand}</td>
-                        <td>{product.Type}</td>
-                        <td>{product.Description}</td>
-                        <td>{product.CreatedAt:yyyy-MM-dd HH:mm:ss}</td>
-                        <td>{product.UpdatedAt:yyyy-MM-dd HH:mm:ss}</td>
-                    </tr>";
-            }
-
-            html += @"
-                </table>
-            </body>
-            </html>";
-
-            return html;
-        }
     }
 }

@@ -13,9 +13,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "TrangSanPham API",
+        Title = "Products API",
         Version = "v1",
-        Description = "API for managing products"
+        Description = "API for managing products. <Note for mentor, page endpoint at Home/Index"
     });
 });
 
@@ -46,7 +46,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "TrangSanPham API V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Products API V1");
         c.RoutePrefix = string.Empty; // Makes Swagger UI available at the root of the app
     });
 }
@@ -59,6 +59,18 @@ app.UseCors("AllowAll");
 
 // Enable Authorization Middleware
 app.UseAuthorization();
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/Home/Index"); // Điều hướng đến Index.cshtml thông qua controller
+    }
+    else
+    {
+        await next(); // Tiếp tục cho các middleware khác
+    }
+});
 
 // Map Controllers
 app.MapControllerRoute(
